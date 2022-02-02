@@ -1,11 +1,13 @@
-import Header from "./Components/Header";
 import BarCharts from "./Components/BarCharts";
+import ActionPane from "./Components/ActionPane";
+
+
 
 function App() {
   return (
     <div>
-      <Header title = 'Charts'/>
       <BarCharts/>
+      <ActionPane pointsToDistribute = {Math.floor(Math.random() * 20 + 1)}/>
     </div>
   );
 }

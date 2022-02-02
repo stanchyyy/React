@@ -1,0 +1,15 @@
+.ActionPane {
+    font-size: 3rem;
+    color:red;
+    margin:auto;
+    width: 70%;
+    max-width: 45ch;
+    text-align: center;
+}
+.ActionPanePoints {
+    color: rgb(255, 56, 56);
+    font-size: 3.8rem;
+    font-style:italic;
+    font-weight: bold;
+    border-bottom: 0.2rem solid;
+}
