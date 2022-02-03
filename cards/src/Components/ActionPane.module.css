@@ -4,49 +4,48 @@
 
 .ActionPane {
     font-size: 3rem;
-    color:red;
-    margin:auto;
+    margin: 10rem auto 5rem  auto;
     width: 70%;
     max-width: 45ch;
     text-align: center;
 }
 .ActionPanePoints {
-    color: rgb(255, 56, 56);
+    color: red;
     font-size: 3.8rem;
     font-style:italic;
     font-weight: bold;
     border-bottom: 0.2rem solid;
 }
-  
-  /* Float four columns side by side */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .row {margin: 0 -5px;}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+
+.overview{
+
     text-align: center;
-  }
+    margin: auto 2rem auto 2rem;
+}
+
+.upskillbutton{
+    font-size: 1.4rem;
+    background-color: #555555;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 15%;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+
+@media(min-width: 50em){
+    .overview{
+        display: grid;
+        gap:1.5rem;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    .column{
+        border: 2px solid black;
+        font-size: 1.5rem;
+        border-radius: 15%;
+    }
+
+}

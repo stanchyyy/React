@@ -11,6 +11,7 @@ const skills = [{
   defaultPoints :  baseSkillPoints,
   maxPoints : maxBaseSkillPoints,
   attributeName : 'STRENGHT',
+  color: '#5271C2',
   },
   {
   id : 2,
@@ -18,6 +19,7 @@ const skills = [{
   defaultPoints : defaultPoints,
   maxPoints : maxPoints,
   attributeName : 'AGILITY',
+  color: '#35a541',
   },
   {
   id : 3,
@@ -25,6 +27,7 @@ const skills = [{
   defaultPoints : defaultPoints,
   maxPoints : maxPoints,
   attributeName : 'INTELIGENCE',
+  color: '#bdb235',
   },
   {
   id : 4,
@@ -32,6 +35,7 @@ const skills = [{
   defaultPoints : defaultPoints,
   maxPoints : maxPoints,
   attributeName : 'VITALITY',
+  color: '#db6623',
   },
 ];
 
