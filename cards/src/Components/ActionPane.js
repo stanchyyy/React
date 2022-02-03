@@ -9,11 +9,12 @@ const ActionPane = (props) =>{
             </div>
             <div className={styles.row}>
                     {props.skills.map((skill)=>(
-                        <div className={styles.column} key ={skill.id} style={{backgroundImage : 'url('+skill.imageSource+')'}}>
-                        <div className={styles.card}>
+                        <div className={styles.column} key ={skill.id} >
+                        <div className={styles.card} style={{backgroundImage : 'url('+skill.imageSource+')'}}>
                         <h3>{skill.attributeName}</h3>
                         <p>{skill.defaultPoints}</p>
                         </div>
+                        <button>Upskill</button>
                         </div>
 
                     ))}
