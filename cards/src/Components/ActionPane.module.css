@@ -3,48 +3,64 @@
   }
 
 .ActionPane {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 10rem auto 5rem  auto;
-    width: 70%;
     max-width: 45ch;
     text-align: center;
 }
 .ActionPanePoints {
     color: red;
-    font-size: 3.8rem;
+    font-size: 2.8rem;
     font-style:italic;
     font-weight: bold;
     border-bottom: 0.2rem solid;
 }
 
 .overview{
-
     text-align: center;
-    margin: auto 2rem auto 2rem;
+    margin: auto 1rem auto 1rem;
+
 }
 
 .upskillbutton{
-    font-size: 1.4rem;
+    font-size: 1rem;
     background-color: #555555;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     border-radius: 15%;
     font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
+}
+.upskillbutton:active{
+    background-color: rgb(255, 255, 255);
+    color: #555555;
+}
+
+.upskillbutton:disabled{
+    color: #555555;
+    background-color: white;
+    border: 1px solid #555555;
+}
+
+.defaultpoints{
+    font-size: 2rem;
+    color: red;
 }
 
 
-@media(min-width: 50em){
+@media(min-width: 50rem){
     .overview{
         display: grid;
         gap:1.5rem;
-        grid-template-columns: repeat(4, 1fr);
-        
+        grid-template-columns: repeat(4,1fr);
+
     }
     .column{
         border: 2px solid black;
-        font-size: 1.5rem;
+        font-size: 1rem;
         border-radius: 15%;
     }
 

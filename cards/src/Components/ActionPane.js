@@ -10,10 +10,9 @@ const ActionPane = (props) =>{
                     {props.skills.map((skill)=>(
                         <div className={styles.column} key ={skill.id}  >
                         <h3>{skill.attributeName}</h3>
-                        <h3>{skill.defaultPoints}</h3>
-                        <button className={styles.upskillbutton}>Upgrade</button>
+                        <p className={styles.defaultpoints}>{skill.defaultPoints}</p>
+                        <button className={styles.upskillbutton} disabled = {skill.defaultPoints>=skill.maxPoints}>Upgrade</button>
                         </div>
-
                     ))}
             </div>
         </div>

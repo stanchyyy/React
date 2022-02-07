@@ -16,7 +16,7 @@ const skills = [{
   {
   id : 2,
   imageSource : '/images/Illustration-de-Slawomir-Maniak_AGILITY_.jpg',
-  defaultPoints : defaultPoints,
+  defaultPoints : maxPoints,
   maxPoints : maxPoints,
   attributeName : 'AGILITY',
   color: '#35a541',
