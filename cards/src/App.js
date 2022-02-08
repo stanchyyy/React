@@ -9,7 +9,7 @@ let maxBaseSkillPoints = 25;
 
 
 const App = ()=> {
-  const [pointsToDistribute,setPointsToDistribute] = useState(Math.floor(Math.random() * 20 + 1));
+  let [pointsToDistribute,setPointsToDistribute] = useState(Math.floor(Math.random() * 20 + 1));
 
   const [skills,setSkills] = useState([
   {
@@ -46,11 +46,22 @@ const App = ()=> {
   },
 ])
 
+//Update skill
+const reduceSkillPoints = (id) =>{
+  setPointsToDistribute( pointsToDistribute-1)
+}
+
+const updateSkill= (id)=>{
+  setSkills(skills.map((skill)=>skill.id===id
+  ?{...skill,defaultPoints: skill.defaultPoints+1}:
+  skill))
+}
+
   return (
     <div>
       <ActionPane pointsToDistribute = {pointsToDistribute}/>
       <div className={'overview'}>
-        <Skill skills = {skills}/>
+        <Skill skills = {skills} reduceSkillPoints={reduceSkillPoints} updateSkill = {updateSkill}/>
       </div>
     </div>
   );

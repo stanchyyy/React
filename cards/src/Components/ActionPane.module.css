@@ -12,29 +12,6 @@
     border-bottom: 0.2rem solid;
 }
 
-.upskillbutton{
-    font-size: 1rem;
-    background-color: #555555;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 1rem 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    border-radius: 15%;
-    font-family: Copperplate, Papyrus, fantasy;
-    font-weight: bold;
-}
-.upskillbutton:active{
-    background-color: rgb(255, 255, 255);
-    color: #555555;
-}
-
-.upskillbutton:disabled{
-    color: #555555;
-    background-color: white;
-    border: 1px solid #555555;
-}
-
 .defaultpoints{
     font-size: 2rem;
     color: red;
