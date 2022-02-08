@@ -1,0 +1,8 @@
+@media(min-width: 50rem){
+    .column{
+        border: 2px solid black;
+        font-size: 1rem;
+        border-radius: 15%;
+    }
+
+}

@@ -1,11 +1,18 @@
 import ActionPane from "./Components/ActionPane";
-let  pointsToDistribute = Math.floor(Math.random() * 20 + 1);
+import Skill from "./Components/Skill";
+import {useState} from "react";
+
 let defaultPoints = 1;
 let maxPoints = 10;
 let baseSkillPoints = 5;
 let maxBaseSkillPoints = 25;
 
-const skills = [{
+
+const App = ()=> {
+  const [pointsToDistribute,setPointsToDistribute] = useState(Math.floor(Math.random() * 20 + 1));
+
+  const [skills,setSkills] = useState([
+  {
   id : 1,
   imageSource : '/images/Illustration-de-Nutchapol-Thitinunthakorn_STRENGHT_.jpg',
   defaultPoints :  baseSkillPoints,
@@ -37,14 +44,14 @@ const skills = [{
   attributeName : 'VITALITY',
   color: '#db6623',
   },
-];
+])
 
-
-
-function App() {
   return (
     <div>
-      <ActionPane pointsToDistribute = {pointsToDistribute} skills = {skills}/>
+      <ActionPane pointsToDistribute = {pointsToDistribute}/>
+      <div className={'overview'}>
+        <Skill skills = {skills}/>
+      </div>
     </div>
   );
 }
