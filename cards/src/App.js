@@ -23,7 +23,7 @@ const App = ()=> {
   {
   id : 2,
   imageSource : '/images/Illustration-de-Slawomir-Maniak_AGILITY_.jpg',
-  defaultPoints : maxPoints,
+  defaultPoints : defaultPoints,
   maxPoints : maxPoints,
   attributeName : 'AGILITY',
   color: '#35a541',
